@@ -1,8 +1,7 @@
 <?php
+require_once 'api/get.php';
 require_once 'shared/main.php';
 require_once 'shared/ratelimits.php';
-include_once 'shared/unsymlink.php';
-require_once 'api/get.php';
 
 $updateId = isset($_GET['id']) ? $_GET['id'] : null;
 $usePack = isset($_GET['lang']) ? $_GET['lang'] : 0;
