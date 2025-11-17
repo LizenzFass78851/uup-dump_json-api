@@ -1,7 +1,8 @@
 <?php
-require_once 'api/fetchupd.php';
 require_once 'shared/main.php';
 require_once 'shared/ratelimits.php';
+include_once 'shared/unsymlink.php';
+require_once 'api/fetchupd.php';
 
 $arch = isset($_GET['arch']) ? $_GET['arch'] : 'amd64';
 $ring = isset($_GET['ring']) ? $_GET['ring'] : 'WIF';
